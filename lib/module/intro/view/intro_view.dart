@@ -14,12 +14,12 @@ class IntroView extends StatefulWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          color: Colors.grey[100],
-          height: MediaQuery.of(context).size.height,
+          // color: Colors.grey[100],
           padding: const EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              //#TEMPLATE carousel_intro
               /*
               TODO: Implement this @ controller
               int currentIndex = 0;
@@ -159,6 +159,7 @@ class IntroView extends StatefulWidget {
                 label: "Next",
                 onPressed: () {},
               ),
+              //#END
             ],
           ),
         ),

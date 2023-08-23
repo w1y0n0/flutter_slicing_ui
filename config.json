@@ -1,15 +1,15 @@
 {
-  "modules": [
-    "splash",
-    "intro",
-    "login",
-    "register",
-    "forgot_password",
-    "change_password"
-  ],
-  "module_directory_name": "module",
-  "experimental_mode": false,
-  "learning_mode": true,
-  "unfreezed": true,
-  "use_cubit": false
+    "modules": [
+        "splash",
+        "intro",
+        "login",
+        "register",
+        "forgot_password",
+        "change_password"
+    ],
+    "module_directory_name": "module",
+    "experimental_mode": false,
+    "learning_mode": true,
+    "unfreezed": true,
+    "use_cubit": false
 }
