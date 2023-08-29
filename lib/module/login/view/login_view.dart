@@ -3,8 +3,8 @@ import 'package:flutter_slicing_ui/core.dart';
 import 'package:flutter_slicing_ui/core/theme/theme_config.dart';
 import 'package:flutter_slicing_ui/core/widget/button/button.dart';
 import 'package:flutter_slicing_ui/core/widget/button/textfield/textfield.dart';
+import 'package:flutter_slicing_ui/state_util.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../controller/login_controller.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -113,20 +113,30 @@ class LoginView extends StatefulWidget {
               const SizedBox(
                 height: 20.0,
               ),
-              Text(
-                "Forgot Password",
-                style: TextStyle(
-                  fontSize: 14.0,
-                  fontWeight: FontWeight.bold,
-                  color: primaryColor,
+              InkWell(
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const RegisterView()),
+                ),
+                child: InkWell(
+                  onTap: () => Get.to(const ForgotPasswordView()),
+                  child: Text(
+                    "Forgot Password",
+                    style: TextStyle(
+                      fontSize: 14.0,
+                      fontWeight: FontWeight.bold,
+                      color: primaryColor,
+                    ),
+                  ),
                 ),
               ),
               const Spacer(),
-              QButton(
-                label: "Sign Up",
-                color: Colors.grey,
-                onPressed: () {},
-              ),
+              if (MediaQuery.of(context).viewInsets.bottom == 0)
+                QButton(
+                  label: "Sign Up",
+                  color: Colors.grey[600],
+                  onPressed: () => Get.to(const RegisterView()),
+                ),
             ],
           ),
         ),
