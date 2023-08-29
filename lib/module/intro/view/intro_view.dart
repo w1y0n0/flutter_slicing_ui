@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slicing_ui/core.dart';
 import 'package:flutter_slicing_ui/core/theme/theme_config.dart';
 import 'package:flutter_slicing_ui/core/widget/button/button.dart';
-import '../controller/intro_controller.dart';
+import '../../../state_util.dart';
 
 class IntroView extends StatefulWidget {
   const IntroView({Key? key}) : super(key: key);
@@ -157,7 +157,7 @@ class IntroView extends StatefulWidget {
               }),
               QButton(
                 label: "Next",
-                onPressed: () {},
+                onPressed: () => Get.offAll(const LoginView()),
               ),
               //#END
             ],
