@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slicing_ui/core.dart';
-import 'package:flutter_slicing_ui/core/theme/theme_config.dart';
-import 'package:flutter_slicing_ui/core/widget/button/button.dart';
-import 'package:flutter_slicing_ui/core/widget/button/textfield/textfield.dart';
-import 'package:flutter_slicing_ui/state_util.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginView extends StatefulWidget {
@@ -108,7 +104,7 @@ class LoginView extends StatefulWidget {
               ),
               QButton(
                 label: "Login",
-                onPressed: () => Get.offAll(const DashboardView()),
+                onPressed: () => Get.offAll(const MainNavigationView()),
               ),
               const SizedBox(
                 height: 20.0,

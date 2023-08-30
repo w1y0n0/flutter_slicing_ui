@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slicing_ui/core.dart';
-import '../view/change_password_view.dart';
+import '../view/main_navigation_view.dart';
 
-class ChangePasswordController extends State<ChangePasswordView> {
-  static late ChangePasswordController instance;
-  late ChangePasswordView view;
+class MainNavigationController extends State<MainNavigationView> {
+  static late MainNavigationController instance;
+  late MainNavigationView view;
 
   @override
   void initState() {
@@ -18,5 +18,9 @@ class ChangePasswordController extends State<ChangePasswordView> {
   @override
   Widget build(BuildContext context) => widget.build(context, this);
 
-  bool isHidenPassword = true;
+  int selectedIndex = 0;
+  updateIndex(int newIndex) {
+    selectedIndex = newIndex;
+    setState(() {});
+  }
 }

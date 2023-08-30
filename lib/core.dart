@@ -18,6 +18,10 @@ export 'package:flutter_slicing_ui/module/intro/controller/intro_controller.dart
 export 'package:flutter_slicing_ui/module/intro/view/intro_view.dart';
 export 'package:flutter_slicing_ui/module/login/controller/login_controller.dart';
 export 'package:flutter_slicing_ui/module/login/view/login_view.dart';
+export 'package:flutter_slicing_ui/module/main_navigation/controller/main_navigation_controller.dart';
+export 'package:flutter_slicing_ui/module/main_navigation/view/main_navigation_view.dart';
+export 'package:flutter_slicing_ui/module/profile/controller/profile_controller.dart';
+export 'package:flutter_slicing_ui/module/profile/view/profile_view.dart';
 export 'package:flutter_slicing_ui/module/register/controller/register_controller.dart';
 export 'package:flutter_slicing_ui/module/register/view/register_view.dart';
 export 'package:flutter_slicing_ui/module/splash/controller/splash_controller.dart';
