@@ -108,7 +108,7 @@ class LoginView extends StatefulWidget {
               ),
               QButton(
                 label: "Login",
-                onPressed: () {},
+                onPressed: () => Get.offAll(const DashboardView()),
               ),
               const SizedBox(
                 height: 20.0,
