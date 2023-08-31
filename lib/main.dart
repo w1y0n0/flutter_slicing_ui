@@ -18,10 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       navigatorKey: Get.navigatorKey,
-      theme: MyTheme.getMyTheme(),
+      theme: MyTheme.getTheme(),
       // theme: MyDarkTheme.getMyDarkTheme(),
       debugShowCheckedModeBanner: false,
-      home: kDebugMode ? const IntroView() : const SplashView(),
+      home: kDebugMode ? const LoginView() : const SplashView(),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyDarkTheme {
-  static getMyDarkTheme() {
+  static getTheme() {
     return ThemeData.dark().copyWith(
       appBarTheme: const AppBarTheme(
         centerTitle: true,

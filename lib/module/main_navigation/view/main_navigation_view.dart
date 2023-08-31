@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slicing_ui/core.dart';
-import '../controller/main_navigation_controller.dart';
 
 class MainNavigationView extends StatefulWidget {
   const MainNavigationView({Key? key}) : super(key: key);
@@ -23,7 +22,7 @@ class MainNavigationView extends StatefulWidget {
         body: IndexedStack(
           index: controller.selectedIndex,
           children: [
-            const DashboardView(),
+            const Dashboard2View(),
             Container(
               color: Colors.green,
             ),
